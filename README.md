@@ -1,3 +1,21 @@
+备注:若scss无效则需要修改node_modelues/react-scripts/config/webpack.config.dev.js 增加scss的支持 需要修改的请参考以下
+
+```javascrpit
+{ 
+  test: /\.scss$/, 
+  loaders: ['style-loader', 'css-loader', 'sass-loader'], 
+},
+// "file" loader makes sure those assets get served by WebpackDevServer.
+```
+
+```javascrpit
+// Exclude `js` files to keep "css" loader working as it injects
+// its runtime that would otherwise processed through "file" loader.
+// Also exclude `html` and `json` extensions so they get processed
+// by webpacks internal loaders.
+exclude: [/\.(js|jsx|mjs)$/, /\.html$/, /\.json$/,/\.scss$/],
+```
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>
