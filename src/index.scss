@@ -1,0 +1,7 @@
+body {
+    $primary-color: #333; // 定义变量。作用域为括号。
+    background-color: $primary-color; // 使用变量
+    $base-line: 2px;
+    $base-line: 1px !default;
+    $gloable-red-color: #f00 !global; // 全局变量
+}
