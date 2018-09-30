@@ -31,3 +31,41 @@ $App:"App";
         }
       }
 }
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .content-box{
+    overflow: hidden;
+  }
+  .nav {
+    padding: 20px;
+    float: left;
+    width: 160px;
+    background-color: #fcc;
+  }
+  .nav li{
+    line-height: 30px;
+  }
+  .content{
+    padding: 20px 0 0 200px;
+    background-color: #ccf;
+    height: 110px;
+  }
+  .mine-nav{
+    background-color: #cfc;
+    margin-top: 20px;
+    height: 70px;
+  }
+  .mine-nav ul{
+    overflow: hidden;
+  }
+  .mine-nav ul li{
+    float: left;
+    width: 50%;
+  }
+  .mine-nav>div{
+    margin-top: 20px;
+  }
