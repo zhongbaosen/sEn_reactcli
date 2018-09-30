@@ -1,0 +1,9 @@
+$baseFontSize:16px !default;
+// pixels to rems 
+@function pxToRem($px) {
+  @return $px / $baseFontSize * 1rem;
+}
+html {
+ font-size: $baseFontSize;
+ -ms-touch-action: none;
+}

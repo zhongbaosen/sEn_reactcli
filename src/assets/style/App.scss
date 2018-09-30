@@ -1,3 +1,5 @@
+@import './rem.scss';
+
 $App:"App";
 .#{$App} {
     text-align: center;
@@ -15,7 +17,8 @@ $App:"App";
     }
 
     &-title {
-        font-size: 1.5em;
+        animation: App-title-spin 2s infinite;
+        font-size: pxToRem(25px);
     }
 
     &-intro {
@@ -29,7 +32,16 @@ $App:"App";
         to {
             transform: rotate(360deg);
         }
+    }
+
+    @keyframes App-title-spin {
+      from {
+          color: red;
       }
+      to {
+          color: yellow;;
+      }
+  }
 }
 
 * {
