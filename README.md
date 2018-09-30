@@ -1,6 +1,6 @@
 备注:若scss无效则需要修改node_modelues/react-scripts/config/webpack.config.dev.js 增加scss的支持 需要修改的请参考以下
 
-```javascrpit
+```javascript
 { 
   test: /\.scss$/, 
   loaders: ['style-loader', 'css-loader', 'sass-loader'], 
@@ -8,7 +8,7 @@
 // "file" loader makes sure those assets get served by WebpackDevServer.
 ```
 
-```javascrpit
+```javascript
 // Exclude `js` files to keep "css" loader working as it injects
 // its runtime that would otherwise processed through "file" loader.
 // Also exclude `html` and `json` extensions so they get processed
