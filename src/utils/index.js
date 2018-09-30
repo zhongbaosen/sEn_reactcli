@@ -1,5 +1,7 @@
-import {Runfetch} from './fetch';
+import {Fetch} from './fetch';
 
-const Utils = {Runfetch};
+const Utils = {
+    Fetch   //Fetch模块
+};
 
-export {Utils};
+export default Utils;

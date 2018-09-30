@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
-import {Runfetch as Fetch} from '../utils/fetch';
-
+import Utils from '../utils';
+const Fetch = Utils.Fetch;
 class List extends Component {
     constructor(props) {
         super(props);
@@ -10,10 +10,10 @@ class List extends Component {
         this.getListData()
     }
     getListData() {
-        console.log(Fetch);
         Fetch.get("./mock/list.json").then((res) => {
             return res.json();
         }).then((json)=>{
+            console.log('得到的数据:',json)
             this.setState({
                 dataList: json.data
             })
