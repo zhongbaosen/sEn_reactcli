@@ -4,7 +4,6 @@ import List from './containers/List.js'
 import Home from './containers/Home.js'
 import Mine from './containers/Mine.js'
 import TestRedux from "./containers/TestRedux"
-// import './App.css'
 import './assets/style/App.scss'
 import logo from './logo.svg'
 
